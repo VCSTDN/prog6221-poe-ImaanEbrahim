@@ -1,0 +1,15 @@
+<Window x:Class="SANELEAPP_WPF.RecipeDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Recipe Details" Height="450" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <Label x:Name="RecipeNameLabel" FontWeight="Bold" FontSize="16" Margin="0,0,0,10"/>
+            <Label Content="Ingredients:" FontWeight="Bold"/>
+            <ListBox x:Name="IngredientsListBox" Margin="0,0,0,10" DisplayMemberPath="Display"/>
+            <Label Content="Steps:" FontWeight="Bold"/>
+            <ListBox x:Name="StepsListBox" Margin="0,0,0,10"/>
+            <Label x:Name="TotalCaloriesLabel" FontWeight="Bold" FontSize="16" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
